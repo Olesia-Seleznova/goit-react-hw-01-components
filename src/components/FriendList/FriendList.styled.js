@@ -6,7 +6,7 @@ export const FriendListMarcup = styled.ul`
   width: 250px;
 `;
 
-export const FriendListItem = styled.li`
+export const FriendItem = styled.li`
   margin: 8px 0;
   display: flex;
   align-items: center;

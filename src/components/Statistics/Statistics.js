@@ -12,7 +12,7 @@ import {
 export const Statistics = ({ stats, title }) => {
   return (
     <StatisticsInfo>
-      <StatTitle>Upload stats</StatTitle>
+      {title && <StatTitle>{title}</StatTitle>}
       <StatList>
         {stats.map(item => (
           <StatItem key={item.id} className="item">
@@ -31,5 +31,5 @@ Statistics.propTypes = {
     id: PropTypes.number.isRequired,
     label: PropTypes.string.isRequired,
     percentage: PropTypes.number.isRequired,
-  }),
+  }).isRequired,
 };
